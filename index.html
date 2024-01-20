@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <div class="container">
+        <div class="inputs">
+            <div class="day">
+                <p id="day-p">day</p>
+                <input onkeyup="calculateAge()" type="number" id="day" placeholder="DD">
+                <p class="hide" id="erorr-day"><i>Must be a vaild day</i></p>
+            </div>
+            <div class="month">
+                <p id="month-p">month</p>
+                <input onkeyup="calculateAge()" type="number" id="month" placeholder="MM">
+                <p class="hide" id="erorr-month"><i>Must be a vaild month</i></p>
+            </div>
+            <div class="year">
+                <p id="year-p">year</p>
+                <input onkeyup="calculateAge()" type="number" id="year" placeholder="YYYY">
+                <p class="hide" id="erorr-year"><i>Must be a vaild year</i></p>
+            </div>
+        </div>
+
+        <div class="hr">
+            <hr>
+            <img src="assets/images/icon-arrow.svg" alt="">
+        </div>
+
+        <div class="outputs">
+            <i><h1><span id="years-cal">- - </span>years</h1></i>
+            <i><h1><span id="month-cal">- - </span>months</h1></i>
+            <i><h1><span id="day-cal">- - </span>days</h1></i>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
